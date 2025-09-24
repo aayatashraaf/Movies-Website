@@ -1,0 +1,32 @@
+.subscribe {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),   
+      rgba(0, 0, 0, 0.6)    
+    ),
+    url("../assets/Subscribe.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  margin: 50px 0;
+  background-position: center;
+}
+.subscribe .subscribeContainer h1 {
+  font-size: clamp(24px, 5vw, 50px);
+  font-weight: bolder;  
+  color: #fff;          
+}
+.subscribe .subscribeContainer a {
+  background: red;
+  padding: 12px 25px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto 0;
+  width: fit-content;
+}
+.subscribe .subscribeContainer a:hover {
+  background: darkred;
+}

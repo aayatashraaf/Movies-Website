@@ -1,0 +1,30 @@
+.privacyContainer {
+  padding: 40px 20px;
+  color: var(--text-color);
+}
+.privacyContainer h1 {
+  margin-bottom: 12px;
+}
+.privacyContainer h2 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.privacyContainer .note {
+  margin-top: 16px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+.mailLink {
+  color: var(--accent-color);       
+  text-decoration: none;            
+  font-weight: 600;                 
+}
+.attribution .link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;          
+}
+
+
+

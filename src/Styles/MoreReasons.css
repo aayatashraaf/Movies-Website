@@ -1,0 +1,28 @@
+.moreReasons {
+  /* background-color: var(--background-color); */
+  padding: 50px 0;
+}
+.reasonsContainer .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  text-align: center;
+}
+.reasonsContainer .cards .card {
+  background:var(--bg-card);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--text-color);
+  border: none;
+  transition: transform 0.3s ease;
+}
+.reasonsContainer .cards .card:hover {
+  transform: translateY(-8px);
+}
+.reasonsContainer .cards .card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+h4{
+  font-weight: bolder;
+}

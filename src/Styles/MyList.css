@@ -1,0 +1,113 @@
+.myListPage {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  transition: var(--main-transition);
+  cursor: pointer;
+  border: none;
+}
+.myListPage .SectionTitle {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+.myListPage .emptyText {
+  font-size: 16px;
+  color: var(--text-color);
+}
+.myListPage .moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center; 
+  border: none;
+  background: none;
+}
+.myListPage .movieCardWrapper {
+  background-color: var(--bg-card);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  align-items: center;
+  min-height: 350px; 
+  transition: transform 0.3s ease;
+}
+.myListPage .movieCardWrapper:hover {
+  transform: translateY(-6px);
+}
+.myListPage .movieCardWrapper img {
+  width: 100%;
+  display: block;
+  background:none; 
+}
+.titleRow {
+  color: white;
+  padding: 0px;
+  margin: 10px;
+  font-family: var(--main-font);
+}
+.title {
+  font-size: 18px;
+  color: var(--accent-color);
+  cursor: pointer;
+  min-height: 45px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.titleCard{
+  background: none;
+}
+.year {
+  margin: 10px 0;
+  font-size: 14px;
+  color: var(--text-color);
+  font-family: var(--main-font);
+}
+.ratingValue {
+  font-size: 14px;
+  color: var(--text-color);
+  font-family: var(--main-font);
+  display: block;
+  margin-top: 5px;
+}
+.ratingValue i {
+  color: rgb(255, 215, 0);
+}
+.myListPage .movieActions {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  gap: 10px;               
+  margin-top: auto;       
+}
+.myListPage .playBtn,
+.myListPage .removeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 38px;          
+  width: 90px;             
+  padding: 0 16px;       
+  font-size: 14px;
+  border-radius: 50px;
+  background-color: var(--details-button-color);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: var(--main-transition);
+  font-family: var(--main-font);
+}
+.myListPage .playBtn:hover,
+.myListPage .removeBtn:hover {
+  background-color: darkred;
+}
+
+

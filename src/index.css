@@ -1,0 +1,60 @@
+:root {
+  --main-font: "Nunito", sans-serif; 
+  --heading-font: "Oswald", sans-serif; 
+  --main-transition: 0.3s;
+  --background-color: #fff;
+  --details-button-color: #e50914;   
+  --bg-card:#f4f1f197;
+  --text-color: #000;
+  --accent-color: #e50914;
+}
+.darkTheme {
+  --background-color: #000;
+  --bg-card: #111;
+  --text-color: #fff;
+  --accent-color: #e50914;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background-color);
+  font-family: var(--main-font); 
+}
+h1, h2, h3, .SectionTitle {
+  font-family: var(--heading-font); 
+}
+.login input {
+  color: #fff;
+  border: 1px solid #e50914; 
+  }
+.SectionTitle {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+}
+.theme-toggle-icon {
+  color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+

@@ -1,0 +1,123 @@
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.contactForm {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  /* background-color: var(--bg-shade-color); */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form */
+.contactUs-form h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.contactUs-form .form-row {
+  margin-bottom: 20px;
+
+}
+
+.contactUs-form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.contactUs-form .form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.contactUs-form .form-group input,
+.contactUs-form .form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 14px;
+  font-family: var(--main-font);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.contactUs-form .form-group input,
+.contactUs-form .form-group textarea {
+  background-color: var(--bg-shade-color); 
+  color: var(--text-color);
+
+}
+
+
+.contactUs-form .form-group textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+/* Button */
+.contactUs-form .btn-continue {
+  width: auto;                /* ياخد العرض على قد المحتوى */
+  min-width: 160px;           /* أقل عرض */
+  margin: 0 auto;             /* يوسّط الزر */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;         /* padding أفقي */
+  background-color: var(--accent-color);
+  color: #fff;                /* ✅ النص أبيض دايمًا */
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.contactUs-form .btn-continue:hover {
+  background-color: darkred;
+}
+/* Dark Theme Inputs */
+.darkTheme .contactUs-form .form-group textarea {
+  color: #fff;
+}
+/* Dark Theme Contact Box */
+.darkTheme .contactForm {
+  background-color: #111;     
+  border: 1px  #333;        
+}
+/* Dark Theme Button Text */
+.darkTheme .contactUs-form .btn-continue {
+  color: #fff;
+}
+.formMessage {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.formMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.formMessage.error {
+  background-color: #f5c6ca;
+  color: var(--accent-color);
+}

@@ -1,0 +1,89 @@
+.movie {
+  background-color: var(--bg-card);
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  transition: var(--main-transition);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  min-height: 400px; 
+}
+.movie .image img {
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+.movie .title {
+  font-size: 18px;
+  color: var(--accent-color);
+  margin: 10px 0;
+  cursor: pointer;
+  font-family: var(--heading-font);
+  min-height: 45px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.movie .year {
+  margin: 10px 0;
+  font-size: 14px;
+  color: var(--text-color);
+  font-family: var(--main-font);
+}
+.movie .ratingValue {
+  font-size: 14px;
+  color: var(--text-color);
+  font-family: var(--main-font);
+  display: block;
+  margin-top: 5px;
+}
+.ratingValue i {
+  color: rgb(255, 215, 0);
+}
+.movie .playBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  background-color: var(--details-button-color);
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 8px 20px;
+  color: #fff;              
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px; 
+  transition: var(--main-transition);
+  font-family: var(--main-font);
+  transition: all 0.3s;
+}
+ .playBtn:hover{
+  background-color: darkred;
+}
+.saveBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;  
+  border-radius: 0;
+  transition: color 0.3s ease;
+  margin-left: 10px;
+}
+.saveBtn.saved {
+  color: #000;  
+  border-radius: 0;
+  background: none;
+}
+
+.darkTheme .saveBtn {
+  color: #fff;  
+}
+.darkTheme .saveBtn.saved {
+  color: #fff;  
+}
+
+

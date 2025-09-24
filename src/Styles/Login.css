@@ -1,0 +1,144 @@
+.loginContainer {
+  padding: 60px 20px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Box */
+.login {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--bg-shade-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.welcome h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Labels */
+.login label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Inputs (يشمل text/email/password) */
+.login input[type="text"],
+.login input[type="email"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 14px;
+  font-family: var(--main-font);
+  outline: none; /* هنضيف بديل واضح في :focus */
+  color: #000;
+}
+
+/* رسائل الخطأ */
+.invalidInputError,
+.login .invalidInputError {
+  color: var(--accent-color);
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/* زر الإرسال */
+.loginSubmit {
+  width: auto;
+  min-width: 160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.loginSubmit:hover { background-color: darkred; }
+
+/* Dark Theme */
+.darkTheme .login {
+  background-color: #111;
+  border: 1px solid #333;
+}
+.darkTheme .login input[type="text"],
+.darkTheme .login input[type="email"],
+.darkTheme .login input[type="password"] {
+  background-color: #111;
+  color: #fff;
+  border-color: #333;
+}
+.darkTheme .loginSubmit { color: #fff; }
+
+/* Register link */
+.login p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  color: var(--text-color);
+}
+.login p a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.formMessage {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.formMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.formMessage.error {
+  background-color: #f5c6ca;
+  color: var(--accent-color);
+}
+
+
+.passwordWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.passwordWrapper input {
+  width: 100%;
+  padding-right: 35px; /* مساحة للأيقونة */
+}
+
+.togglePassword {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+}

@@ -1,0 +1,85 @@
+.moviesRow {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  scrollbar-width: none;
+}
+/*trinding now*/
+.sectionTitle {
+  font-size: 35px;
+  font-weight: bold;
+  color:var(--text-color) ;
+  margin: 30px 0 15px;
+  text-align: center;
+}
+.moviesRow .movie {
+  flex: 0 0 280px;          
+  max-width: 280px;
+  background:var(--bg-card) ;
+  border-radius: 10px;
+  color: var(--text-color);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+.moviesRow .movie:hover { transform: translateY(-8px); }
+.moviesRow .movie .image {
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+.moviesRow .movie .image img {
+  width: 100%;
+  height: 100%;            
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.scrollBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s, opacity 0.3s;
+  z-index: 5;            
+  opacity: 0;              
+  pointer-events: none;   
+}
+.carouselWrapper:hover .scrollBtn {
+  opacity: 1;
+  pointer-events: auto;
+}
+.scrollBtn:hover {
+  background: rgba(49, 48, 48, 0.9);
+}
+.scrollBtn.left {
+  left: 10px; 
+}
+.scrollBtn.right {
+  right: 10px;
+}
+@media (max-width: 768px) {
+  .moviesRow .movie {
+    flex: 0 0 220px;
+    max-width: 220px;
+  }
+  .moviesRow .movie .image img {
+    height: 200px;
+  }
+}

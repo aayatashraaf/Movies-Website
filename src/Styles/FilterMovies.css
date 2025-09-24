@@ -1,0 +1,38 @@
+.filter {
+	margin: 20px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.filter span {
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: var(--text-color);
+}
+.filter select {
+	padding: 8px 16px;
+	font-size: 1rem;
+	border: 2px solid #ccc;
+	border-radius: 6px;
+	background-color: var(--bg-card);
+	color: var(--text-color);
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .filter select:hover {
+	border-color: #999;
+} 
+
+ .filter select:focus {
+	outline: none;
+	border-color: var(--text-color);
+	box-shadow: 0 0 4px rgba(24, 0, 88, 0.4);
+} 
+
+ .filter option {
+	background-color: var(--bg-shade-color);
+	color: var(--text-color);
+	padding: 8px;
+} */
